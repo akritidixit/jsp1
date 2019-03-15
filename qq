@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Using JavaBean in JSP</title>
+
+<jsp:useBean id="BeanId" class="user.UserBean" scope="session"/>
+<jsp:setProperty name="BeanId" property="username"/>
+<jsp:setProperty name="BeanId" property="email"/>
+</head>
+<% BeanId.getEmailid(); %>
+<body>
+<jsp.getProperty name="BeanId" property="username"/><br>
+<jsp:getProperty name="BeanId" property="email"/>
+</body>
+</html>
